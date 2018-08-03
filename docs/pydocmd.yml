@@ -1,0 +1,22 @@
+site_name: wordplay API Reference
+repo_url: https://www.github.com/enioluwa23/wordplay
+
+generate:
+- api/dictionary.md:
+  - wordplay.dictionary.Dictionary++
+  - wordplay.dictionary.SortOrder
+  - wordplay.dictionary.SortType
+- api/criteria.md:
+  - wordplay.criteria++
+- api/utils.md:
+  - wordplay.utils.Utils++
+
+pages:
+- Home: index.md << ../README.md
+- API Reference:
+  - Dictionary: api/dictionary.md
+  - Criteria: api/criteria.md
+  - Utils: api/utils.md
+
+
+

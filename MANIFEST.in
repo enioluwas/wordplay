@@ -1,0 +1,11 @@
+include *.md
+include LICENSE
+include *.py
+include *.txt
+include tox.ini
+recursive-include test *.py
+graft wordplay
+recursive-include docs *.yml
+exclude tm.py
+global-exclude *py[cod]
+
