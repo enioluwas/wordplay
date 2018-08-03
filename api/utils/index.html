@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Utils - wordplay API Reference</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Utils";
+    var mkdocs_page_input_path = "api\\utils.md";
+    var mkdocs_page_url = "/api/utils/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> wordplay API Reference</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">API Reference</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../dictionary/">Dictionary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../criteria/">Criteria</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Utils</a>
+    <ul class="subnav">
+            
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">wordplay API Reference</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>API Reference &raquo;</li>
+        
+      
+    
+    <li>Utils</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="wordplay.utils.Utils">Utils</h1>
+
+<pre><code class="python">Utils(self, /, *args, **kwargs)
+</code></pre>
+
+<p>Class providing utility functions for argument validation.
+<h2 id="wordplay.utils.Utils.validate_args">validate_args</h2></p>
+<pre><code class="python">Utils.validate_args(*args)
+</code></pre>
+
+<p>Verifies string, tuple and list args are valid string constructors.</p>
+<p>Args:
+    *args (<code>tuple</code>): Variadic tuple of arguments to be validated</p>
+<p>Raises:
+    <code>ArgumentError</code>: if argument is invalid</p>
+<h2 id="wordplay.utils.Utils.is_positive_integer">is_positive_integer</h2>
+
+<pre><code class="python">Utils.is_positive_integer(arg)
+</code></pre>
+
+<p>Verifies argument is a valid int constructor.</p>
+<p>Args:
+    arg (<code>int</code> or <code>str</code>): Argument to be validated</p>
+<p>Returns:
+    <code>True</code> if valid
+    <code>False</code> if invalid</p>
+<h2 id="wordplay.utils.Utils.add_disallowed_char">add_disallowed_char</h2>
+
+<pre><code class="python">Utils.add_disallowed_char(arg)
+</code></pre>
+
+<p>Add character that cannot be used in search.</p>
+<p>Args:
+    arg (<code>str</code>): character to be added</p>
+<p>Raises:
+    <code>ArgumentError</code>: if arg is not of type str</p>
+<h2 id="wordplay.utils.Utils.remove_disallowed_char">remove_disallowed_char</h2>
+
+<pre><code class="python">Utils.remove_disallowed_char(arg)
+</code></pre>
+
+<p>Make a previously disallowed search character valid.</p>
+<p>Args:
+    arg (<code>str</code>): character to be removed</p>
+<p>Raises:
+    <code>ArgumentError</code>: if arg is not of type str</p>
+<h2 id="wordplay.utils.Utils.set_disallowed_chars">set_disallowed_chars</h2>
+
+<pre><code class="python">Utils.set_disallowed_chars(arg)
+</code></pre>
+
+<p>Override existing set of disallowed search characters.</p>
+<p>Args:
+    arg (<code>set</code>): set of characters</p>
+<p>Raises:
+    <code>ArgumentError</code>: if any char in set is empty or len(char) &gt; 1</p>
+<h2 id="wordplay.utils.Utils.is_allowed_char">is_allowed_char</h2>
+
+<pre><code class="python">Utils.is_allowed_char(arg)
+</code></pre>
+
+<p>Verifies character is an allowed.</p>
+<p>Args:
+    arg (<code>str</code>): character to be validated</p>
+<p>Returns:
+    <code>True</code> if valid
+    <code>False</code> if invalid</p>
+<p>Raises:
+    <code>ArgumentError</code>: if arg is not of type str</p>
+<h2 id="wordplay.utils.Utils.is_allowed_str">is_allowed_str</h2>
+
+<pre><code class="python">Utils.is_allowed_str(arg)
+</code></pre>
+
+<p>Verifies string is an allowed.</p>
+<p>Args:
+    arg (<code>str</code>): string to be validated</p>
+<p>Returns:
+    <code>True</code> if valid
+    <code>False</code> if invalid</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../criteria/" class="btn btn-neutral" title="Criteria"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../criteria/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>
