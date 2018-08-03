@@ -1,6 +1,6 @@
 # Wordplay
 
-[![Build Status](https://travis-ci.com/enioluwa23/wordplay.svg?token=twxrG5TUEVfWt3VszysV&branch=master)](https://travis-ci.com/enioluwa23/wordplay)
+[![Build Status](https://travis-ci.org/enioluwa23/wordplay.svg?branch=master)](https://travis-ci.com/enioluwa23/wordplay) [![PyPI version](https://img.shields.io/pypi/v/wordplay.svg)](https://pypi.org/project/wordplay/) [![Supported versions](https://img.shields.io/pypi/wheel/wordplay.svg)](https://pypi.org/project/wordplay/) [![PyPI version](https://img.shields.io/pypi/pyversions/wordplay.svg)](https://pypi.org/project/wordplay/)
 
 Python package for word searching utilities.
 
@@ -20,7 +20,7 @@ I initially built this as an algorithm solely to help my endeavors in word games
 
 Words are stored in a `Dictionary` object. Initialize the dictionary with a [`set`](https://docs.python.org/2/library/stdtypes.html#set) of strings (there are no restrictions on what the string can contain) or `Dictionary()` with no arguments to use the word set sourced from [here](https://github.com/dwyl/english-words). In the future, I will amass a couple of word lists and make them options for initializing the dictionary.
 
-If you do want restrictions on the string, see the documentation for the [`Utils`](#yikes) module. For complex query parameters, you can use a `Criteria` object. The class uses the builder pattern, making it easy to construct search parameters.
+If you do want restrictions on the string, see the documentation for the [`Utils`](https://enioluwa23.github.io/wordplay/api/utils/) module. For complex query parameters, you can use a `Criteria` object. The class uses the builder pattern, making it easy to construct search parameters.
 
 Here is a an example file:
 
@@ -60,13 +60,13 @@ if __name__ == '__main__':
     main()
 ```
 
-For further example usage see the [Documentation](#documentation).
+For further example usage see the [Documentation](https://enioluwa23.github.io/wordplay/).
 
 To run tests, use `pytest`.
 
 ## Documentation
 
-[API Reference](#yikes)
+[API Reference](https://enioluwa23.github.io/wordplay/)
 
 ## License
 
