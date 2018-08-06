@@ -1,6 +1,6 @@
 # Wordplay
 
-[![Build Status](https://travis-ci.org/enioluwa23/wordplay.svg?branch=master)](https://travis-ci.com/enioluwa23/wordplay) [![PyPI version](https://img.shields.io/pypi/v/wordplay.svg)](https://pypi.org/project/wordplay/) [![Supported versions](https://img.shields.io/pypi/wheel/wordplay.svg)](https://pypi.org/project/wordplay/) [![PyPI version](https://img.shields.io/pypi/pyversions/wordplay.svg)](https://pypi.org/project/wordplay/)
+[![Build Status](https://travis-ci.org/enioluwa23/wordplay.svg?branch=master)](https://travis-ci.org/enioluwa23/wordplay) [![PyPI version](https://img.shields.io/pypi/v/wordplay.svg)](https://pypi.org/project/wordplay/) [![Supported versions](https://img.shields.io/pypi/wheel/wordplay.svg)](https://pypi.org/project/wordplay/) [![PyPI version](https://img.shields.io/pypi/pyversions/wordplay.svg)](https://pypi.org/project/wordplay/)
 
 Python package for word searching utilities.
 
