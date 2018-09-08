@@ -4,6 +4,7 @@ from wordplay.dictionary import Dictionary
 from wordplay.utils import Utils
 
 global_dict = Dictionary()
+scrabble_dict = Dictionary('Scrabble')
 
 
 def setup_function(function):
@@ -18,6 +19,15 @@ def test_get_words():
     test_result = global_dict.get_words(words)
 
     assert Ct(test_result) == Ct(exp_result)
+
+    exp_result = ['extrinsic']
+    words = Criteria()
+    words.begins_with('e').ends_with('c').contains('in')
+    words.contains_at(('x', 2), ('r', 4)).size_is(9)
+    test_result = scrabble_dict.get_words(words)
+
+    assert Ct(test_result) == Ct(exp_result)
+
 
 
 def test_get_words_with_any_letters():
