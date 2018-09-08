@@ -41,6 +41,9 @@ class Dictionary(object):
         if word_list is None:
             with open(rf('wordplay', 'data/sample_wordlist.dat')) as wordlist:
                 self.__word_list = set(wordlist.read().split())
+        elif word_list == 'Scrabble':
+            with open(rf('wordplay', 'data/scrabble_wordlist.dat')) as wordlist:
+                self.__word_list = set(wordlist.read().split())
         elif isinstance(word_list, set):
             self.__word_list = word_list
         else:
