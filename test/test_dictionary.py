@@ -29,7 +29,6 @@ def test_get_words():
     assert Ct(test_result) == Ct(exp_result)
 
 
-
 def test_get_words_with_any_letters():
     exp_result = ['diotic', 'dition', 'indico', 'indict', 'nidiot', 'odinic']
     test_result = global_dict.get_words_with_any_letters('diction', 6)
