@@ -115,7 +115,7 @@ class Dictionary(object):
             if has_u_contains:
                 is_match = True
                 for c in u_contains:
-                    if w.count(c) != u_contains.count(c):
+                    if w.count(c) < u_contains.count(c):
                         is_match = False
                         break
 
