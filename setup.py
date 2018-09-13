@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='wordplay',
-    version='1.0.0a2',
+    version='1.0.0a4',
     author='Enioluwa Segun',
     author_email='enioluwasegun@gmail.com',
     description='Easy word filtering and searching from a custom set of words',
